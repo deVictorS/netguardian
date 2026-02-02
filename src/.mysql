@@ -1,0 +1,13 @@
+-- Criando a tabela para armazenar os IPs de ameaças
+CREATE TABLE ameacas (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    ip_address TEXT NOT NULL,
+    tipo_ameaca TEXT,        -- Ex: 'Botnet', 'Malware', 'Phishing'
+    data_coleta DATETIME,    -- Quando foi inserido no sistema
+    fonte_dados TEXT,        -- De qual lista veio (ex: 'FeodoTracker')
+    status TEXT DEFAULT 'Ativo' -- Se a ameaça ainda é relevante
+);
+
+-- Criando um índice de busca (Essencial para Redes/Cibersegurança)
+-- Isso torna a verificação de um IP quase instantânea, mesmo com milhões de registros.
+CREATE INDEX idx_ip_search ON ameacas(ip_address);
