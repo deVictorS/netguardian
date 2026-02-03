@@ -1,6 +1,6 @@
 <div align="center"> 
 
-# Projeto: NetGuardian - Inteligência de Ameaças com Python e SQL #
+# NetGuardian - Inteligência de Ameaças com Python e SQL #
 
 </div>
 
