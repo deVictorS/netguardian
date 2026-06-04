@@ -1,12 +1,12 @@
-# NetGuardian 🛡️
+# NetGuardian 
 
 Um sistema inteligente de detecção e análise de ameaças na rede usando Python e banco de dados SQLite.
 
-## 📋 Descrição
+##  Descrição
 
 NetGuardian é uma ferramenta de inteligência de ameaças que coleta, armazena e analisa dados sobre IPs maliciosos de múltiplas fontes. O sistema integra dados de listas de bloqueio públicas, permitindo consultas rápidas e visualização de padrões de ameaças em um dashboard interativo.
 
-## 🎯 Objetivo
+##  Objetivo
 
 Fornecer uma plataforma centralizada para:
 - Coletar dados de ameaças de múltiplas fontes
@@ -15,7 +15,7 @@ Fornecer uma plataforma centralizada para:
 - Visualizar padrões de ameaças através de dashboards
 - Facilitar análise de segurança de rede
 
-## 🏗️ Arquitetura
+##  Arquitetura
 
 O projeto é composto por três componentes principais:
 
@@ -41,7 +41,7 @@ O projeto é composto por três componentes principais:
 - Armazena histórico de ameaças
 - Permite consultas rápidas mesmo com milhões de registros
 
-## ⚙️ Funcionalidades
+##  Funcionalidades
 
 ### Coleta de Dados
 - ✅ Download de múltiplas listas de bloqueio
@@ -51,16 +51,16 @@ O projeto é composto por três componentes principais:
 - ✅ Validação e tratamento de erros
 
 ### Tipos de Ameaças Monitoradas
-- 🔴 Ataque a serviço SSH
-- 📧 Ataque a serviço de Email
-- 🌐 Ataque a serviço web (Apache)
-- 📬 Ataque a serviço IMAP
-- 📁 Ataque a serviço FTP
-- 📞 Ataque a serviço SIP
-- 🤖 Botnet
-- 🔄 IP de ataque recorrente
-- 💬 IRC Bot
-- 🔐 Brute Force
+-  Ataque a serviço SSH
+-  Ataque a serviço de Email
+-  Ataque a serviço web (Apache)
+-  Ataque a serviço IMAP
+-  Ataque a serviço FTP
+-  Ataque a serviço SIP
+-  Botnet
+-  IP de ataque recorrente
+-  IRC Bot
+-  Brute Force
 
 ### Sistema de Consultas
 - ✅ Busca por IP específico
@@ -75,7 +75,7 @@ O projeto é composto por três componentes principais:
 - ✅ Contagem total de registros
 - ✅ Temas visuais profissionais
 
-## 🛠️ Requisitos
+##  Requisitos
 
 - **Python 3.x**
 - **sqlite3** - Banco de dados (incluído no Python)
@@ -90,7 +90,7 @@ O projeto é composto por três componentes principais:
 pip install requests pandas matplotlib seaborn
 ```
 
-## 🚀 Como usar
+##  Como usar
 
 ### 1. Estrutura de Diretórios
 
@@ -168,7 +168,7 @@ python dashboard.py
 - Porcentagem de ocorrência
 - Total de registros analisados
 
-## 📊 Estrutura do Banco de Dados
+##  Estrutura do Banco de Dados
 
 ### Tabela: `ameacas`
 
@@ -190,7 +190,7 @@ CREATE INDEX idx_ip_search ON ameacas(ip_address);
 - Consultas rápidas mesmo com milhões de registros
 - Histórico completo de detecções
 
-## 📝 Detalhamento dos Módulos
+##  Detalhamento dos Módulos
 
 ### coletor.py
 ```python
@@ -219,7 +219,7 @@ CREATE INDEX idx_ip_search ON ameacas(ip_address);
 - Renderização com Matplotlib
 ```
 
-## 🔗 Fontes de Dados
+##  Fontes de Dados
 
 O sistema coleta dados de:
 - **Blocklist.de** - Lista pública de IPs maliciosos
@@ -236,7 +236,7 @@ O sistema coleta dados de:
 
 **URL Principal:** https://lists.blocklist.de/
 
-## 🎓 Casos de Uso
+##  Casos de Uso
 
 1. **Análise de Segurança** - Verificar IPs suspeitos
 2. **Configuração de Firewall** - Criar listas de bloqueio
@@ -244,7 +244,7 @@ O sistema coleta dados de:
 4. **Inteligência de Ameaças** - Identificar padrões de ataque
 5. **Relatórios de Segurança** - Gerar visualizações executivas
 
-## ⚠️ Considerações
+##  Considerações
 
 1. **Atualização Regular** - Execute `coletor.py` periodicamente
 2. **Tamanho do Banco** - Pode crescer significativamente
@@ -252,7 +252,7 @@ O sistema coleta dados de:
 4. **Performance** - Índices garantem consultas rápidas
 5. **Privacidade** - Os dados são públicos de fontes abertas
 
-## 🔄 Fluxo de Trabalho Recomendado
+##  Fluxo de Trabalho Recomendado
 
 ```
 1. Coletar dados
@@ -270,7 +270,7 @@ O sistema coleta dados de:
    (Bloquear IPs, investigar incidentes, etc)
 ```
 
-## 📈 Exemplo de Saída do Dashboard
+##  Exemplo de Saída do Dashboard
 
 ```
 Total de registros analisados: 15247
@@ -282,7 +282,7 @@ Gráfico em Pizza:
 - Outros: 20%
 ```
 
-## 🔒 Segurança
+##  Segurança
 
 - Banco de dados local não exposto
 - Sem credenciais hardcodeadas
@@ -290,11 +290,11 @@ Gráfico em Pizza:
 - Validação de entrada
 - Tratamento de exceções robusto
 
-## 📄 Licença
+##  Licença
 
 Este projeto não possui licença especificada.
 
-## 👨‍💻 Autor
+##  Autor
 
 [deVictorS](https://github.com/deVictorS)
 
